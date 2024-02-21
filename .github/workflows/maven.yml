@@ -32,7 +32,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
        
-    - run: cd ~/actions-runner/deploy/loadsApi/loadsApi/TruckBooking
+    - run: cd ~/actions-runner/_work/loadsApi/loadsApi/TruckBooking
     - run: sudo docker container rm load-container || true
     - run: sudo docker image rm load || true
     - run: sudo docker build -t load .
