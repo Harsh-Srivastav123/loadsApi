@@ -25,8 +25,8 @@ jobs:
 
 
          # Step to upload a file from the host
-    - name: Upload file
-      run: cp /home/ubuntu/firebaseKey.json ./TruckBooking/src/main/resources  
+    # - name: Upload file
+    #   run: cp /home/ubuntu/firebaseKey.json ./TruckBooking/src/main/resources  
 
     - run: sudo docker container stop load-container || true  
     - name: Build with Maven
