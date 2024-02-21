@@ -36,6 +36,6 @@ jobs:
     - run: sudo docker container rm load-container || true
     - run: sudo docker image rm load || true
     - run: sudo docker build -t load .
-    - run: sudo docker run --env-file /home/ubuntu/envProd.properties -p 8080:8080 --name load-container  load | echo "success" 
+    - run: sudo docker run --env-file /home/ubuntu/envDev.properties -p 8080:8080 --name load-container  load | echo "success" 
 
  
